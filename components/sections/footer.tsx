@@ -2,8 +2,10 @@
 import { Mail } from "lucide-react";
 import { site } from "@/lib/site";
 import GradientMenu from "@/components/ui/gradient-menu";
+import { useLanguage } from "@/components/i18n/language-provider";
 
 export function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="relative border-t border-white/10 py-16">
       <div className="container-tight">
@@ -12,10 +14,7 @@ export function Footer() {
             Hallowis<span className="text-gradient">AI</span>
           </a>
 
-          <p className="max-w-md text-sm text-slate-400">
-            Intelligent systems that scale your business — lead generation, software,
-            cloud, and automation.
-          </p>
+          <p className="max-w-md text-sm text-slate-400">{t.footer.tagline}</p>
 
           {/* Adapted gradient menu as a social / quick-action dock */}
           <GradientMenu />
@@ -30,9 +29,9 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">
-          <p>© {new Date().getFullYear()} HallowisAI. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} HallowisAI. {t.footer.rights}</p>
           <div className="flex gap-6">
-            {site.nav.map((item) => (
+            {t.navItems.map((item) => (
               <a key={item.href} href={item.href} className="hover:text-slate-300">
                 {item.label}
               </a>

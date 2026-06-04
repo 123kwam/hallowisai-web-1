@@ -2,8 +2,10 @@
 import { ArrowRight, Mail } from "lucide-react";
 import { site } from "@/lib/site";
 import { Reveal } from "@/components/ui/reveal";
+import { useLanguage } from "@/components/i18n/language-provider";
 
 export function CTA() {
+  const { t } = useLanguage();
   return (
     <section className="relative py-24 md:py-32">
       <div className="container-tight">
@@ -14,16 +16,14 @@ export function CTA() {
 
             <div className="relative mx-auto max-w-2xl">
               <h2 className="section-title text-4xl sm:text-6xl">
-                Let&apos;s build the system that <span className="italic text-gradient">scales you</span>
+                {t.ctaSection.headingA}{" "}
+                <span className="italic text-gradient">{t.ctaSection.accent}</span>
               </h2>
-              <p className="mx-auto mt-5 max-w-xl text-slate-300">
-                Book a free discovery call. We&apos;ll map your biggest opportunity and
-                show you exactly what an AI-powered system would look like for your business.
-              </p>
+              <p className="mx-auto mt-5 max-w-xl text-slate-300">{t.ctaSection.body}</p>
 
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a href={site.links.calendly} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                  Book a discovery call
+                  {t.actions.bookCall}
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a href={`mailto:${site.email}`} className="btn-ghost">

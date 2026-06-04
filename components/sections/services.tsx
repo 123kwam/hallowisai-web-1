@@ -1,7 +1,7 @@
 "use client";
 import { Check, Search, Code2, Cloud, Workflow } from "lucide-react";
-import { services } from "@/lib/site";
 import { Reveal } from "@/components/ui/reveal";
+import { useLanguage } from "@/components/i18n/language-provider";
 
 const icons = {
   "lead-generation": Search,
@@ -10,31 +10,39 @@ const icons = {
   "business-automation": Workflow,
 } as const;
 
+// non-translatable visual styling, keyed by service id
+const gradients: Record<string, { from: string; to: string }> = {
+  "lead-generation": { from: "#3b82f6", to: "#22d3ee" },
+  "software-development": { from: "#06b6d4", to: "#3b82f6" },
+  "cloud-devops": { from: "#0ea5e9", to: "#22d3ee" },
+  "business-automation": { from: "#2563eb", to: "#38bdf8" },
+};
+
 export function Services() {
+  const { t } = useLanguage();
   return (
     <section id="services" className="relative scroll-mt-24 py-24 md:py-32">
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">What we do</span>
+          <span className="eyebrow">{t.services.eyebrow}</span>
           <h2 className="section-title mt-6 text-4xl sm:text-6xl">
-            Four ways we <span className="italic text-gradient">move you forward</span>
+            {t.services.headingA}{" "}
+            <span className="italic text-gradient">{t.services.accent}</span>
           </h2>
-          <p className="mt-4 text-slate-400">
-            Every engagement is senior-led and outcome-driven. Pick one capability or
-            combine them into an end-to-end system.
-          </p>
+          <p className="mt-4 text-slate-400">{t.services.subcopy}</p>
         </Reveal>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {services.map((service, i) => {
+          {t.services.items.map((service, i) => {
             const Icon = icons[service.id as keyof typeof icons];
+            const g = gradients[service.id];
             return (
               <Reveal key={service.id} delay={i * 0.08}>
                 <article
                   style={
                     {
-                      "--from": service.gradientFrom,
-                      "--to": service.gradientTo,
+                      "--from": g.from,
+                      "--to": g.to,
                     } as React.CSSProperties
                   }
                   className="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-500 hover:border-white/20 hover:bg-white/[0.05]"

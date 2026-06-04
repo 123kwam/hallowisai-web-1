@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
+import { LanguageProvider } from "@/components/i18n/language-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,7 +67,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${archivo.variable} ${jetbrains.variable} dark`}
     >
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

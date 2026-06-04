@@ -2,10 +2,12 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
+import { useLanguage } from "@/components/i18n/language-provider";
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
 
 export function Hero() {
+  const { t } = useLanguage();
   return (
     <section
       id="top"
@@ -27,7 +29,7 @@ export function Hero() {
           transition={{ duration: 0.6, ease }}
           className="mb-8"
         >
-          <span className="eyebrow">AI Agency · Build · Automate · Scale</span>
+          <span className="eyebrow">{t.hero.eyebrow}</span>
         </motion.div>
 
         {/* giant headline */}
@@ -38,7 +40,7 @@ export function Hero() {
             transition={{ duration: 0.7, ease }}
             className="block"
           >
-            We Engineer
+            {t.hero.line1}
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 40 }}
@@ -47,7 +49,7 @@ export function Hero() {
             className="block"
           >
             <span className="font-display italic font-bold text-gradient">
-              Intelligent
+              {t.hero.accent}
             </span>
           </motion.span>
           <motion.span
@@ -56,7 +58,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.16, ease }}
             className="block"
           >
-            Systems.
+            {t.hero.line3}
           </motion.span>
         </h1>
 
@@ -67,9 +69,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.28, ease }}
           className="mt-9 max-w-xl text-base leading-relaxed text-slate-300/90 sm:text-lg"
         >
-          HallowisAI turns lead generation, software, cloud, and automation into
-          self-running infrastructure — the kind of system your competitors
-          cannot ignore.
+          {t.hero.subcopy}
         </motion.p>
 
         {/* CTAs */}
@@ -85,11 +85,11 @@ export function Hero() {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Book a discovery call
+            {t.actions.bookCall}
             <ArrowRight className="h-4 w-4" />
           </a>
           <a href="#services" className="group link-arrow">
-            Explore services
+            {t.actions.exploreServices}
             <span className="h-px w-8 bg-white/30 transition-all duration-300 group-hover:w-12 group-hover:bg-brand-cyan" />
             <ArrowUpRight className="h-4 w-4" />
           </a>
@@ -111,7 +111,7 @@ export function Hero() {
 
           {/* scroll cue */}
           <div className="hidden flex-col items-center gap-2 sm:flex">
-            <span className="hud">Scroll</span>
+            <span className="hud">{t.hero.scroll}</span>
             <span className="h-10 w-px overflow-hidden bg-white/15">
               <span className="block h-full w-full animate-scroll-cue bg-brand-cyan" />
             </span>

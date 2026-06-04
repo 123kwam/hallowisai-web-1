@@ -3,10 +3,13 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/components/i18n/language-provider";
+import { locales, type Locale } from "@/lib/dictionaries";
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const { locale, setLocale, t } = useLanguage();
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -35,7 +38,7 @@ export function Navbar() {
 
         {/* desktop nav */}
         <nav className="hidden items-center gap-9 lg:flex">
-          {site.nav.map((item) => (
+          {t.navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -48,10 +51,26 @@ export function Navbar() {
 
         {/* right cluster */}
         <div className="flex items-center gap-5">
-          <div className="hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] sm:flex">
-            <span className="text-brand-cyan">EN</span>
-            <span className="text-white/25">/</span>
-            <span className="text-white/40">NL</span>
+          {/* language toggle */}
+          <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em]">
+            {locales.map((l: Locale, i) => (
+              <React.Fragment key={l}>
+                {i > 0 && <span className="text-white/25">/</span>}
+                <button
+                  type="button"
+                  onClick={() => setLocale(l)}
+                  aria-pressed={locale === l}
+                  className={cn(
+                    "uppercase transition-colors",
+                    locale === l
+                      ? "text-brand-cyan"
+                      : "text-white/40 hover:text-white"
+                  )}
+                >
+                  {l}
+                </button>
+              </React.Fragment>
+            ))}
           </div>
           <a
             href={site.links.calendly}
@@ -59,7 +78,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="hidden btn-primary !px-6 !py-3 sm:inline-flex"
           >
-            Get Started
+            {t.actions.getStarted}
           </a>
           <button
             className="text-slate-200 lg:hidden"
@@ -76,7 +95,7 @@ export function Navbar() {
         <div className="container-tight mt-3 lg:hidden">
           <div className="glass rounded-2xl p-4">
             <ul className="flex flex-col gap-1">
-              {site.nav.map((item) => (
+              {t.navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
@@ -94,7 +113,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full"
                 >
-                  Get Started
+                  {t.actions.getStarted}
                 </a>
               </li>
             </ul>

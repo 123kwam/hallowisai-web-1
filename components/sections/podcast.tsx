@@ -2,8 +2,10 @@
 import { Play, Mic, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 import { Reveal } from "@/components/ui/reveal";
+import { useLanguage } from "@/components/i18n/language-provider";
 
 export function Podcast() {
+  const { t } = useLanguage();
   return (
     <section id="podcast" className="relative scroll-mt-24 py-24 md:py-32">
       <div className="container-tight">
@@ -16,16 +18,13 @@ export function Podcast() {
               <div>
                 <span className="eyebrow">
                   <Mic className="h-3.5 w-3.5" />
-                  The Podcast
+                  {t.podcast.eyebrow}
                 </span>
                 <h2 className="section-title mt-6 text-4xl sm:text-5xl">
-                  Tap Into <span className="italic text-gradient">Wisdom</span>
+                  {t.podcast.titleA}{" "}
+                  <span className="italic text-gradient">{t.podcast.accent}</span>
                 </h2>
-                <p className="mt-4 max-w-md text-slate-400">
-                  Conversations on building with AI, scaling businesses, and the
-                  systems thinking behind growth. New episodes on YouTube — practical
-                  insight you can apply the same day.
-                </p>
+                <p className="mt-4 max-w-md text-slate-400">{t.podcast.body}</p>
                 <a
                   href={site.links.podcast}
                   target="_blank"
@@ -33,7 +32,7 @@ export function Podcast() {
                   className="btn-primary mt-7"
                 >
                   <Play className="h-4 w-4" />
-                  Watch on YouTube
+                  {t.podcast.watch}
                 </a>
               </div>
 
