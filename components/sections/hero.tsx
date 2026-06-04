@@ -88,7 +88,7 @@ export function Hero() {
             Book a discovery call
             <ArrowRight className="h-4 w-4" />
           </a>
-          <a href="#services" className="link-arrow">
+          <a href="#services" className="group link-arrow">
             Explore services
             <span className="h-px w-8 bg-white/30 transition-all duration-300 group-hover:w-12 group-hover:bg-brand-cyan" />
             <ArrowUpRight className="h-4 w-4" />
