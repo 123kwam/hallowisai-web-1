@@ -25,18 +25,13 @@ export function Navbar() {
       )}
     >
       <div className="container-tight flex items-center justify-between">
-        {/* logo / monogram */}
-        <a href="#top" className="flex items-center gap-3">
-          <span className="grid h-9 w-9 place-items-center rounded-sm border border-white/15 font-display text-sm font-extrabold tracking-tightest text-white">
-            H<span className="text-gradient">A</span>
+        {/* wordmark */}
+        <a href="#top" className="leading-none">
+          <span className="block font-display text-base font-extrabold uppercase tracking-tight text-white">
+            Hallowis<span className="text-gradient">AI</span>
           </span>
-          <span className="leading-none">
-            <span className="block font-display text-sm font-extrabold uppercase tracking-tight text-white">
-              Hallowis<span className="text-gradient">AI</span>
-            </span>
-            <span className="block font-mono text-[9px] uppercase tracking-[0.3em] text-white/40">
-              AI Agency
-            </span>
+          <span className="block font-mono text-[9px] uppercase tracking-[0.3em] text-white/40">
+            AI Agency
           </span>
         </a>
 

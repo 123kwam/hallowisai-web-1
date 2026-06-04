@@ -1,5 +1,5 @@
 "use client";
-import { Sparkles, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { site } from "@/lib/site";
 import GradientMenu from "@/components/ui/gradient-menu";
 
@@ -8,10 +8,7 @@ export function Footer() {
     <footer className="relative border-t border-white/10 py-16">
       <div className="container-tight">
         <div className="flex flex-col items-center gap-10 text-center">
-          <a href="#top" className="flex items-center gap-2 font-display text-xl font-bold text-white">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand-blue to-brand-cyan">
-              <Sparkles className="h-4 w-4 text-white" />
-            </span>
+          <a href="#top" className="font-display text-2xl font-extrabold uppercase tracking-tight text-white">
             Hallowis<span className="text-gradient">AI</span>
           </a>
 
