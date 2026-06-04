@@ -29,6 +29,10 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      letterSpacing: {
+        tightest: "-0.04em",
       },
       keyframes: {
         "drift-a": {
@@ -45,6 +49,16 @@ const config: Config = {
           from: { opacity: "0", transform: "translateY(24px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        "scroll-cue": {
+          "0%": { transform: "scaleY(0)", transformOrigin: "top" },
+          "45%": { transform: "scaleY(1)", transformOrigin: "top" },
+          "55%": { transform: "scaleY(1)", transformOrigin: "bottom" },
+          "100%": { transform: "scaleY(0)", transformOrigin: "bottom" },
+        },
+        "rec-blink": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.2" },
+        },
         shimmer: {
           "0%": { backgroundPosition: "200% 0" },
           "100%": { backgroundPosition: "-200% 0" },
@@ -58,6 +72,8 @@ const config: Config = {
         "drift-a": "drift-a 18s ease-in-out infinite",
         "drift-b": "drift-b 22s ease-in-out infinite",
         "fade-up": "fade-up 0.7s ease-out forwards",
+        "scroll-cue": "scroll-cue 2.4s ease-in-out infinite",
+        "rec-blink": "rec-blink 1.6s ease-in-out infinite",
         shimmer: "shimmer 6s linear infinite",
         marquee: "marquee 32s linear infinite",
       },

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Inter, Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
 
@@ -9,9 +9,17 @@ const inter = Inter({
   display: "swap",
 });
 
-const sora = Sora({
+const archivo = Archivo({
   subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
   variable: "--font-display",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -54,7 +62,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable} dark`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${archivo.variable} ${jetbrains.variable} dark`}
+    >
       <body className="font-sans">{children}</body>
     </html>
   );

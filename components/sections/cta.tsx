@@ -13,8 +13,8 @@ export function CTA() {
             <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-brand-glow/20 blur-[100px]" />
 
             <div className="relative mx-auto max-w-2xl">
-              <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-                Let&apos;s build the system that <span className="text-gradient">scales you</span>
+              <h2 className="section-title text-4xl sm:text-6xl">
+                Let&apos;s build the system that <span className="italic text-gradient">scales you</span>
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-slate-300">
                 Book a free discovery call. We&apos;ll map your biggest opportunity and

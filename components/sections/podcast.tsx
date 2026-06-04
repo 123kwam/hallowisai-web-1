@@ -18,8 +18,8 @@ export function Podcast() {
                   <Mic className="h-3.5 w-3.5" />
                   The Podcast
                 </span>
-                <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Tap Into <span className="text-gradient">Wisdom</span>
+                <h2 className="section-title mt-6 text-4xl sm:text-5xl">
+                  Tap Into <span className="italic text-gradient">Wisdom</span>
                 </h2>
                 <p className="mt-4 max-w-md text-slate-400">
                   Conversations on building with AI, scaling businesses, and the

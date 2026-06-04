@@ -8,8 +8,8 @@ export function Process() {
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">How we work</span>
-          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-            A clear path from <span className="text-gradient">call to scale</span>
+          <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+            A clear path from <span className="italic text-gradient">call to scale</span>
           </h2>
         </Reveal>
 
@@ -23,7 +23,7 @@ export function Process() {
                 <div className="flex items-center gap-3">
                   <span className="font-display text-4xl font-bold text-gradient">{step.step}</span>
                 </div>
-                <h3 className="mt-4 font-display text-xl font-bold text-white">{step.title}</h3>
+                <h3 className="mt-4 font-display text-xl font-extrabold uppercase tracking-tight text-white">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{step.description}</p>
               </div>
             </Reveal>

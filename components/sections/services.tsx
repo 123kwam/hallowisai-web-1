@@ -16,8 +16,8 @@ export function Services() {
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">What we do</span>
-          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-            Four ways we <span className="text-gradient">move you forward</span>
+          <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+            Four ways we <span className="italic text-gradient">move you forward</span>
           </h2>
           <p className="mt-4 text-slate-400">
             Every engagement is senior-led and outcome-driven. Pick one capability or
@@ -42,17 +42,22 @@ export function Services() {
                   {/* hover glow */}
                   <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[radial-gradient(circle,var(--to),transparent_70%)] opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-40" />
 
-                  <div
-                    className="grid h-14 w-14 place-items-center rounded-2xl text-white shadow-lg"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(135deg, var(--from), var(--to))",
-                    }}
-                  >
-                    <Icon className="h-6 w-6" />
+                  <div className="flex items-center justify-between">
+                    <div
+                      className="grid h-14 w-14 place-items-center rounded-2xl text-white shadow-lg"
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(135deg, var(--from), var(--to))",
+                      }}
+                    >
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-white/30">
+                      S.0{i + 1}
+                    </span>
                   </div>
 
-                  <h3 className="mt-6 font-display text-2xl font-bold text-white">
+                  <h3 className="mt-6 font-display text-2xl font-extrabold uppercase tracking-tight text-white">
                     {service.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-400">

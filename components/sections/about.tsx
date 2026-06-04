@@ -10,8 +10,8 @@ export function About() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <Reveal>
             <span className="eyebrow">About</span>
-            <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Built by operators who <span className="text-gradient">ship</span>
+            <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+              Built by operators who <span className="italic text-gradient">ship</span>
             </h2>
             <p className="mt-5 text-slate-400">
               HallowisAI is a focused AI agency. We don&apos;t hand you a deck and

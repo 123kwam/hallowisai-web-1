@@ -5,9 +5,9 @@ export function GradientMesh() {
       className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-ink"
     >
       {/* drifting gradient orbs */}
-      <div className="absolute -left-40 top-[-10%] h-[34rem] w-[34rem] animate-drift-a rounded-full bg-brand-blue/25 blur-[120px]" />
-      <div className="absolute right-[-10%] top-[20%] h-[30rem] w-[30rem] animate-drift-b rounded-full bg-brand-cyan/20 blur-[130px]" />
-      <div className="absolute bottom-[-15%] left-[20%] h-[36rem] w-[36rem] animate-drift-a rounded-full bg-brand-glow/15 blur-[140px]" />
+      <div className="absolute -left-40 top-[-10%] h-[34rem] w-[34rem] animate-drift-a rounded-full bg-brand-blue/15 blur-[130px]" />
+      <div className="absolute right-[-10%] top-[20%] h-[30rem] w-[30rem] animate-drift-b rounded-full bg-brand-cyan/12 blur-[140px]" />
+      <div className="absolute bottom-[-15%] left-[20%] h-[36rem] w-[36rem] animate-drift-a rounded-full bg-brand-glow/10 blur-[150px]" />
 
       {/* grid + vignette overlays */}
       <div className="absolute inset-0 bg-grid" />

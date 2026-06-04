@@ -1,82 +1,129 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 
-const stats = [
-  { value: "4", label: "Core capabilities" },
-  { value: "24/7", label: "Systems that run themselves" },
-  { value: "1:1", label: "Senior-led delivery" },
-];
+const ease = [0.21, 0.47, 0.32, 0.98] as const;
 
 export function Hero() {
   return (
-    <section id="top" className="relative flex min-h-screen items-center pt-32 pb-20">
-      <div className="container-tight">
-        <div className="mx-auto max-w-4xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="eyebrow">
-              <Sparkles className="h-3.5 w-3.5" />
-              AI Agency · Build · Automate · Scale
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08 }}
-            className="mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl"
-          >
-            Intelligent systems that
-            <br />
-            <span className="text-gradient">scale your business</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16 }}
-            className="mx-auto mt-6 max-w-2xl text-base text-slate-400 sm:text-lg"
-          >
-            HallowisAI designs and builds AI-powered lead generation, custom software,
-            cloud infrastructure, and automation — turning manual operations into
-            self-running systems that compound results.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.24 }}
-            className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
-          >
-            <a href={site.links.calendly} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              Book a discovery call
-              <ArrowRight className="h-4 w-4" />
-            </a>
-            <a href="#services" className="btn-ghost">
-              Explore services
-            </a>
-          </motion.div>
-
-          <motion.dl
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mx-auto mt-16 grid max-w-2xl grid-cols-3 gap-4"
-          >
-            {stats.map((s) => (
-              <div key={s.label} className="glass rounded-2xl px-4 py-5">
-                <dt className="font-display text-2xl font-bold text-white sm:text-3xl">{s.value}</dt>
-                <dd className="mt-1 text-xs text-slate-400">{s.label}</dd>
-              </div>
-            ))}
-          </motion.dl>
-        </div>
+    <section
+      id="top"
+      className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-28"
+    >
+      {/* cinematic hero lighting */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-[1]">
+        <div className="absolute right-[-10%] top-1/2 h-[46rem] w-[46rem] -translate-y-1/2 rounded-full bg-brand-blue/25 blur-[140px]" />
+        <div className="absolute right-[8%] top-[40%] h-[28rem] w-[28rem] -translate-y-1/2 rounded-full bg-brand-cyan/20 blur-[120px]" />
+        <div className="absolute inset-0 vignette" />
+        <div className="absolute inset-0 bg-noise opacity-[0.04]" />
       </div>
+
+      <div className="container-tight">
+        {/* top eyebrow tag */}
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease }}
+          className="mb-8"
+        >
+          <span className="eyebrow">AI Agency · Build · Automate · Scale</span>
+        </motion.div>
+
+        {/* giant headline */}
+        <h1 className="section-title text-[clamp(3rem,11vw,9.5rem)]">
+          <motion.span
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease }}
+            className="block"
+          >
+            We Engineer
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.08, ease }}
+            className="block"
+          >
+            <span className="font-display italic font-bold text-gradient">
+              Intelligent
+            </span>
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.16, ease }}
+            className="block"
+          >
+            Systems.
+          </motion.span>
+        </h1>
+
+        {/* subcopy */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.28, ease }}
+          className="mt-9 max-w-xl text-base leading-relaxed text-slate-300/90 sm:text-lg"
+        >
+          HallowisAI turns lead generation, software, cloud, and automation into
+          self-running infrastructure — the kind of system your competitors
+          cannot ignore.
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.38, ease }}
+          className="mt-11 flex flex-col items-start gap-5 sm:flex-row sm:items-center"
+        >
+          <a
+            href={site.links.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Book a discovery call
+            <ArrowRight className="h-4 w-4" />
+          </a>
+          <a href="#services" className="link-arrow">
+            Explore services
+            <span className="h-px w-8 bg-white/30 transition-all duration-300 group-hover:w-12 group-hover:bg-brand-cyan" />
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </motion.div>
+      </div>
+
+      {/* HUD overlay row */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        className="container-tight absolute inset-x-0 bottom-8"
+      >
+        <div className="flex items-end justify-between">
+          <div className="hud flex items-center gap-2.5">
+            <span className="inline-block h-1.5 w-1.5 animate-rec-blink rounded-full bg-brand-cyan" />
+            REC · HALLOWIS // 2026
+          </div>
+
+          {/* scroll cue */}
+          <div className="hidden flex-col items-center gap-2 sm:flex">
+            <span className="hud">Scroll</span>
+            <span className="h-10 w-px overflow-hidden bg-white/15">
+              <span className="block h-full w-full animate-scroll-cue bg-brand-cyan" />
+            </span>
+          </div>
+
+          <div className="hud text-right leading-relaxed">
+            N 5.60°
+            <br />
+            W 0.19°
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }

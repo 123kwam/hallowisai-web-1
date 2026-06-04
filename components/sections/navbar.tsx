@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -19,60 +19,76 @@ export function Navbar() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled ? "py-3" : "py-5"
+        scrolled
+          ? "border-b border-white/10 bg-ink/80 py-3 backdrop-blur-xl"
+          : "border-b border-transparent py-5"
       )}
     >
-      <div className="container-tight">
-        <nav
-          className={cn(
-            "flex items-center justify-between rounded-full px-5 py-3 transition-all duration-300",
-            scrolled ? "glass shadow-lg shadow-black/20" : "bg-transparent"
-          )}
-        >
-          <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight text-white">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand-blue to-brand-cyan shadow-[0_0_20px_-4px_rgba(56,189,248,0.8)]">
-              <Sparkles className="h-4 w-4 text-white" />
+      <div className="container-tight flex items-center justify-between">
+        {/* logo / monogram */}
+        <a href="#top" className="flex items-center gap-3">
+          <span className="grid h-9 w-9 place-items-center rounded-sm border border-white/15 font-display text-sm font-extrabold tracking-tightest text-white">
+            H<span className="text-gradient">A</span>
+          </span>
+          <span className="leading-none">
+            <span className="block font-display text-sm font-extrabold uppercase tracking-tight text-white">
+              Hallowis<span className="text-gradient">AI</span>
             </span>
-            Hallowis<span className="text-gradient">AI</span>
-          </a>
+            <span className="block font-mono text-[9px] uppercase tracking-[0.3em] text-white/40">
+              AI Agency
+            </span>
+          </span>
+        </a>
 
-          <ul className="hidden items-center gap-8 md:flex">
-            {site.nav.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div className="hidden md:block">
-            <a href={site.links.calendly} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              Book a Call
+        {/* desktop nav */}
+        <nav className="hidden items-center gap-9 lg:flex">
+          {site.nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-300 transition-colors hover:text-white"
+            >
+              {item.label}
             </a>
-          </div>
+          ))}
+        </nav>
 
+        {/* right cluster */}
+        <div className="flex items-center gap-5">
+          <div className="hidden items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] sm:flex">
+            <span className="text-brand-cyan">EN</span>
+            <span className="text-white/25">/</span>
+            <span className="text-white/40">NL</span>
+          </div>
+          <a
+            href={site.links.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden btn-primary !px-6 !py-3 sm:inline-flex"
+          >
+            Get Started
+          </a>
           <button
-            className="text-slate-200 md:hidden"
+            className="text-slate-200 lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
           >
             {open ? <X /> : <Menu />}
           </button>
-        </nav>
+        </div>
+      </div>
 
-        {open && (
-          <div className="glass mt-2 rounded-2xl p-4 md:hidden">
+      {/* mobile menu */}
+      {open && (
+        <div className="container-tight mt-3 lg:hidden">
+          <div className="glass rounded-2xl p-4">
             <ul className="flex flex-col gap-1">
               {site.nav.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-white/5"
+                    className="block rounded-lg px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-slate-200 hover:bg-white/5"
                   >
                     {item.label}
                   </a>
@@ -85,13 +101,13 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full"
                 >
-                  Book a Call
+                  Get Started
                 </a>
               </li>
             </ul>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   );
 }

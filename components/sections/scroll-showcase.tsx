@@ -57,14 +57,14 @@ function DashboardMockup() {
 
 export function ScrollShowcase() {
   return (
-    <section className="relative -mt-24 md:-mt-40">
+    <section className="relative">
       <ContainerScroll
         titleComponent={
           <div className="mb-4">
             <span className="eyebrow">The work</span>
-            <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
+            <h2 className="section-title mt-6 text-4xl sm:text-6xl">
               From idea to a system that <br />
-              <span className="text-gradient">runs your business</span>
+              <span className="italic text-gradient">runs your business</span>
             </h2>
           </div>
         }
