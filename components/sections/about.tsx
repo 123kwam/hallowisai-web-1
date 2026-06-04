@@ -19,7 +19,7 @@ export function About() {
               Senior people, real ownership, measurable outcomes.
             </p>
             <p className="mt-4 text-slate-400">
-              Led by Kwame Afirim Sakyi, the team blends engineering depth with a
+              Led by Kwame Sakyi, the team blends engineering depth with a
               relentless focus on the metrics that matter to your business.
             </p>
 
@@ -46,7 +46,7 @@ export function About() {
                   KS
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Kwame Afirim Sakyi</div>
+                  <div className="font-semibold text-white">Kwame Sakyi</div>
                   <div className="text-sm text-slate-400">Founder &amp; CEO, HallowisAI</div>
                 </div>
               </div>
