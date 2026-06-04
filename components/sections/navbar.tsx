@@ -26,13 +26,11 @@ export function Navbar() {
     >
       <div className="container-tight flex items-center justify-between">
         {/* wordmark */}
-        <a href="#top" className="leading-none">
-          <span className="block font-display text-base font-extrabold uppercase tracking-tight text-white">
-            Hallowis<span className="text-gradient">AI</span>
-          </span>
-          <span className="block font-mono text-[9px] uppercase tracking-[0.3em] text-white/40">
-            AI Agency
-          </span>
+        <a
+          href="#top"
+          className="font-display text-base font-extrabold uppercase tracking-tight text-white"
+        >
+          Hallowis<span className="text-gradient">AI</span>
         </a>
 
         {/* desktop nav */}
