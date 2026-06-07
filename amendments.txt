@@ -1,0 +1,79 @@
+ I went through all nine screens carefully.I went through all nine screens carefully. The design is genuinely strong — the dark tech aesthetic, the blue gradient system, the dashboard mockup, the card layouts. That's already at a high level. What's holding it back is the copy and a few typographic decisions, and crucially, there's almost no SEO foundation for the Dutch market.
+Let me give you everything in a structured way you can hand straight to Claude Code.
+First, the honest diagnosis
+Your copy right now is agency-generic. Phrases like "We engineer intelligent systems," "From idea to a system that runs your business," and "Four ways we move you forward" could belong to any of 10,000 AI agencies. Nothing tells a visitor what they walk away with or why you specifically. The neuroscience of conversion is blunt about this: the brain's threat-detection system (the amygdala) scans for risk and relevance in the first 3–5 seconds. Vague abstraction reads as risk. Specificity reads as safety.
+Three principles drive everything below:
+The brain is loss-averse (Kahneman's prospect theory — losses feel ~2x more painful than equivalent gains feel good), so naming what they're losing right now outperforms naming what they'll gain. It craves cognitive ease (Daniel Kahneman again — fluent, concrete language gets processed as more true and more trustworthy), so short, plain words beat jargon. And it responds to specificity and proof — concrete numbers light up differently than abstractions and lower perceived risk.
+Now the rewrites.
+Section-by-section copy rewrites
+1. Hero (Image 1)
+Current: "WE ENGINEER INTELLIGENT SYSTEMS" + "HallowisAI turns lead generation, software, cloud, and automation into self-running infrastructure — the kind of system your competitors cannot ignore."
+The headline describes you. It should describe their outcome. The subhead is decent but "competitors cannot ignore" is a weak, abstract close.
+
+Headline: WE BUILD AI SYSTEMS THAT RUN WHILE YOU SLEEP
+(alt, more outcome-led): YOUR BUSINESS, ON AUTOPILOT
+
+
+Subhead: Most teams lose hours every week to work a system should be doing. HallowisAI turns your lead generation, software, and operations into self-running infrastructure — so growth doesn't depend on you being online.
+
+
+Primary CTA: Book a Free Discovery Call → (keep — "free" lowers risk, it's the single highest-leverage word you can add)
+Secondary CTA: See What We Build → ("Explore services" is passive; this implies proof)
+
+2. Dashboard section (Image 2)
+"FROM IDEA TO A SYSTEM THAT RUNS YOUR BUSINESS" is actually one of your better lines. Keep the structure, tighten it. The problem here is there's no copy supporting the dashboard — those numbers (1,284 leads, 99.98% uptime, 210 hours saved) are your strongest proof asset and they're floating without a sentence framing them.
+
+Headline: FROM IDEA TO A SYSTEM THAT RUNS YOUR BUSINESS (keep)
+Add a supporting line under it: This is what a HallowisAI system looks like 90 days in — leads qualified automatically, work running on its own, and hours handed back to your team.
+
+That last sentence does heavy lifting: it makes the mockup feel like a real customer result rather than decoration.
+3. Services — "Four ways we move you forward" (Images 3 & 4)
+"Four ways we move you forward" is filler. The card titles (Lead Generation, Software Development, etc.) are fine and SEO-useful, but the descriptions can be sharper. The neuroscience move here: each description should end on a concrete outcome, not a capability.
+
+Section eyebrow: WHAT WE DO (keep)
+Headline: EVERYTHING YOU NEED TO SCALE WITHOUT HIRING
+Subhead: Every engagement is senior-led and built around one question: what will actually move your revenue? Pick one capability or combine them into a full system. (keep most of this — it's good)
+
+Card tweaks (keeping your titles for SEO):
+
+Lead Generation → "AI pipelines that find, qualify, and warm your ideal customers — so your sales team only ever talks to people ready to buy." (this one's already strong, keep it)
+Software Development → end it with: "...shipped fast, without the agency runaround." (adds a subtle competitor jab — "runaround" names a pain they've felt)
+Cloud & DevOps → "...so you ship with confidence at any scale, and sleep through the 3am alerts." (concrete, slightly human)
+Business Systems & Automation → "We connect your tools and kill the busywork — turning manual operations into systems that compound while you focus on growth." ("kill" is a stronger verb than "automate")
+
+4. Process (Image 5)
+"A CLEAR PATH FROM CALL TO SCALE" is good — keep it. The four steps (Discover, Architect, Build, Scale) are clean. One neuroscience note: people fear commitment ambiguity. Add a line that reduces the perceived risk of starting.
+
+Add under the subhead, or as a small line near step 01: "Most clients see their first working system inside the first few weeks — not months."
+
+5. Podcast (Image 6) — solid, leave it. Just make sure the H2 is "Tap Into Wisdom" for branded search.
+
+6. About (Image 7)
+ABOUT PAGE — ADD LOCATION BLOCK (on-brand, SEO-focused):
+
+1. Add a compact section (not full-height) below the existing About content.
+   Eyebrow: "WHERE WE WORK"
+   H2: "BASED IN AMSTERDAM, BUILDING EVERYWHERE"
+   Body: [We're an AI agency rooted in Amsterdam, serving clients across the Netherlands and beyond. Senior people, real ownership, and a bias for shipping — wherever your business is.]
+
+2. Style to match existing brand: dark background, blue gradient accent on the
+   city name (like other headline accents), same uppercase display font for H2.
+   NO stock skyline photo — keep the dark gradient aesthetic.
+
+3. Add visible NAP text near footer: "Amsterdam · Netherlands" alongside the
+   existing email, as real text (not image), for local SEO consistency.
+
+4. Ensure this H2 is a semantic <h2>, and add keywords naturally:
+   "Amsterdam", "AI agency", "Netherlands".
+
+5. Update the NL language version with native Dutch equivalent:
+   H2 e.g. "GEVESTIGD IN AMSTERDAM, ACTIEF OVERAL" and Dutch body copy.
+
+
+
+7. Final CTA (Image 8)
+"LET'S BUILD THE SYSTEM THAT SCALES YOU" is good. The subhead is good. The thing missing across your entire site is risk reversal — what happens on the call, and that it costs nothing/commits to nothing. The brain won't book until the next step feels safe and small.
+
+Add under the subhead: No pitch, no pressure — just a clear map of your biggest opportunity and what it'd take to build it. The call is free and takes 30 minutes.
+
+That single addition will likely move your booking rate more than any other change on this page. You're asking for a meeting; the brain wants to know the cost of saying yes.
