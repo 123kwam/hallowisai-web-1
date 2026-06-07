@@ -33,7 +33,7 @@ export function Hero() {
         </motion.div>
 
         {/* giant headline */}
-        <h1 className="section-title text-[clamp(3rem,11vw,9.5rem)]">
+        <h1 className="section-title text-display">
           <motion.span
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.28, ease }}
-          className="mt-9 max-w-xl text-base leading-relaxed text-slate-300/90 sm:text-lg"
+          className="mt-9 max-w-xl text-body text-slate-300"
         >
           {t.hero.subcopy}
         </motion.p>

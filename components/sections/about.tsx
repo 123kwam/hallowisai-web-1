@@ -12,12 +12,12 @@ export function About() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <Reveal>
             <span className="eyebrow">{t.about.eyebrow}</span>
-            <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+            <h2 className="section-title mt-6 text-h2">
               {t.about.headingA}{" "}
               <span className="italic text-gradient">{t.about.accent}</span>
             </h2>
-            <p className="mt-5 text-slate-400">{t.about.p1}</p>
-            <p className="mt-4 text-slate-400">{t.about.p2}</p>
+            <p className="mt-6 text-body text-slate-300">{t.about.p1}</p>
+            <p className="mt-4 text-body text-slate-300">{t.about.p2}</p>
 
             <a
               href={site.links.linkedin}
@@ -33,7 +33,7 @@ export function About() {
           <Reveal delay={0.1}>
             <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 md:p-10">
               <Quote className="h-10 w-10 text-brand-cyan/40" />
-              <p className="mt-5 font-display text-xl font-medium leading-relaxed text-slate-100">
+              <p className="mt-5 font-display text-h3 font-medium text-slate-100">
                 &ldquo;{t.about.quote}&rdquo;
               </p>
               <div className="mt-7 flex items-center gap-4">
@@ -55,12 +55,12 @@ export function About() {
             <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-brand-blue/15 blur-3xl" />
             <div className="relative max-w-3xl">
               <span className="eyebrow">{t.about.location.eyebrow}</span>
-              <h2 className="section-title mt-5 text-3xl sm:text-5xl">
+              <h2 className="section-title mt-5 text-h2">
                 {t.about.location.pre}{" "}
                 <span className="italic text-gradient">{t.about.location.city}</span>
                 {t.about.location.post}
               </h2>
-              <p className="mt-5 max-w-2xl text-slate-400">{t.about.location.body}</p>
+              <p className="mt-5 max-w-2xl text-body text-slate-300">{t.about.location.body}</p>
             </div>
           </div>
         </Reveal>

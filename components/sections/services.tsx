@@ -25,11 +25,11 @@ export function Services() {
       <div className="container-tight">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">{t.services.eyebrow}</span>
-          <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+          <h2 className="section-title mt-6 text-h2">
             {t.services.headingA}{" "}
             <span className="italic text-gradient">{t.services.accent}</span>
           </h2>
-          <p className="mt-4 text-slate-400">{t.services.subcopy}</p>
+          <p className="mt-5 text-body text-slate-300">{t.services.subcopy}</p>
         </Reveal>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
@@ -65,16 +65,16 @@ export function Services() {
                     </span>
                   </div>
 
-                  <h3 className="mt-6 font-display text-2xl font-extrabold uppercase tracking-tight text-white">
+                  <h3 className="mt-6 font-display text-h3 font-extrabold uppercase text-white">
                     {service.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                  <p className="mt-3 text-body text-slate-300">
                     {service.description}
                   </p>
 
                   <ul className="mt-6 space-y-2.5">
                     {service.points.map((point) => (
-                      <li key={point} className="flex items-center gap-3 text-sm text-slate-300">
+                      <li key={point} className="flex items-center gap-3 text-base text-slate-300">
                         <span
                           className="grid h-5 w-5 shrink-0 place-items-center rounded-full"
                           style={{

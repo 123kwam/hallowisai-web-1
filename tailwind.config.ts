@@ -34,6 +34,16 @@ const config: Config = {
       letterSpacing: {
         tightest: "-0.04em",
       },
+      // Type scale tokens — single source of truth for sizing/leading/tracking.
+      // display → hero, h2 → section headings, h3 → card titles,
+      // body → paragraph copy (18px min), small → secondary supporting text.
+      fontSize: {
+        display: ["clamp(2.5rem, 8vw, 6rem)", { lineHeight: "1.05", letterSpacing: "-0.03em" }],
+        h2: ["clamp(2rem, 5vw, 3.5rem)", { lineHeight: "1.08", letterSpacing: "-0.02em" }],
+        h3: ["1.375rem", { lineHeight: "1.2", letterSpacing: "-0.01em" }],
+        body: ["1.125rem", { lineHeight: "1.6" }],
+        small: ["0.9375rem", { lineHeight: "1.55" }],
+      },
       keyframes: {
         "drift-a": {
           "0%, 100%": { transform: "translate(0px, 0px) scale(1)" },

@@ -14,7 +14,7 @@ export function Footer() {
             Hallowis<span className="text-gradient">AI</span>
           </a>
 
-          <p className="max-w-md text-sm text-slate-400">{t.footer.tagline}</p>
+          <p className="max-w-md text-base text-slate-300">{t.footer.tagline}</p>
 
           {/* Adapted gradient menu as a social / quick-action dock */}
           <GradientMenu />
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-400 sm:flex-row">
           <p>© {new Date().getFullYear()} HallowisAI. {t.footer.rights}</p>
           <div className="flex gap-6">
             {t.navItems.map((item) => (

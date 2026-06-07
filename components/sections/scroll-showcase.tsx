@@ -66,11 +66,11 @@ export function ScrollShowcase() {
         titleComponent={
           <div className="mb-4">
             <span className="eyebrow">{t.showcase.eyebrow}</span>
-            <h2 className="section-title mt-6 text-4xl sm:text-6xl">
+            <h2 className="section-title mt-6 text-h2">
               {t.showcase.headingA} <br />
               <span className="italic text-gradient">{t.showcase.accent}</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base">
+            <p className="mx-auto mt-5 max-w-2xl text-body text-slate-300">
               {t.showcase.support}
             </p>
           </div>

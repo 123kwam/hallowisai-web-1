@@ -20,11 +20,11 @@ export function Podcast() {
                   <Mic className="h-3.5 w-3.5" />
                   {t.podcast.eyebrow}
                 </span>
-                <h2 className="section-title mt-6 text-4xl sm:text-5xl">
+                <h2 className="section-title mt-6 text-h2">
                   {t.podcast.titleA}{" "}
                   <span className="italic text-gradient">{t.podcast.accent}</span>
                 </h2>
-                <p className="mt-4 max-w-md text-slate-400">{t.podcast.body}</p>
+                <p className="mt-5 max-w-md text-body text-slate-300">{t.podcast.body}</p>
                 <a
                   href={site.links.podcast}
                   target="_blank"
