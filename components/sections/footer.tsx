@@ -1,5 +1,5 @@
 "use client";
-import { Mail } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { site } from "@/lib/site";
 import GradientMenu from "@/components/ui/gradient-menu";
 import { useLanguage } from "@/components/i18n/language-provider";
@@ -19,13 +19,20 @@ export function Footer() {
           {/* Adapted gradient menu as a social / quick-action dock */}
           <GradientMenu />
 
-          <a
-            href={`mailto:${site.email}`}
-            className="inline-flex items-center gap-2 text-sm text-slate-300 transition-colors hover:text-white"
-          >
-            <Mail className="h-4 w-4" />
-            {site.email}
-          </a>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
+            <a
+              href={`mailto:${site.email}`}
+              className="inline-flex items-center gap-2 text-sm text-slate-300 transition-colors hover:text-white"
+            >
+              <Mail className="h-4 w-4" />
+              {site.email}
+            </a>
+            <span className="hidden h-4 w-px bg-white/15 sm:block" />
+            <span className="inline-flex items-center gap-2 text-sm text-slate-300">
+              <MapPin className="h-4 w-4 text-brand-cyan" />
+              {t.footer.location}
+            </span>
+          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">

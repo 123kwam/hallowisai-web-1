@@ -48,6 +48,22 @@ export function About() {
             </div>
           </Reveal>
         </div>
+
+        {/* location block — local SEO (Amsterdam / Netherlands) */}
+        <Reveal className="mt-16">
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 md:p-12">
+            <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-brand-blue/15 blur-3xl" />
+            <div className="relative max-w-3xl">
+              <span className="eyebrow">{t.about.location.eyebrow}</span>
+              <h2 className="section-title mt-5 text-3xl sm:text-5xl">
+                {t.about.location.pre}{" "}
+                <span className="italic text-gradient">{t.about.location.city}</span>
+                {t.about.location.post}
+              </h2>
+              <p className="mt-5 max-w-2xl text-slate-400">{t.about.location.body}</p>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

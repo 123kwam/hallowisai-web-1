@@ -118,9 +118,9 @@ export function Hero() {
           </div>
 
           <div className="hud text-right leading-relaxed">
-            N 5.60°
+            N 52.37°
             <br />
-            W 0.19°
+            E 4.90°
           </div>
         </div>
       </motion.div>

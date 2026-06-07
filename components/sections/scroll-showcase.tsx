@@ -70,6 +70,9 @@ export function ScrollShowcase() {
               {t.showcase.headingA} <br />
               <span className="italic text-gradient">{t.showcase.accent}</span>
             </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base">
+              {t.showcase.support}
+            </p>
           </div>
         }
       >

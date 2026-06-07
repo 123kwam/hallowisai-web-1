@@ -20,6 +20,9 @@ export function CTA() {
                 <span className="italic text-gradient">{t.ctaSection.accent}</span>
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-slate-300">{t.ctaSection.body}</p>
+              <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-400">
+                {t.ctaSection.reassure}
+              </p>
 
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a href={site.links.calendly} target="_blank" rel="noopener noreferrer" className="btn-primary">

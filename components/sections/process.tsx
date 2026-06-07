@@ -13,6 +13,9 @@ export function Process() {
             {t.process.headingA}{" "}
             <span className="italic text-gradient">{t.process.accent}</span>
           </h2>
+          <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+            {t.process.support}
+          </p>
         </Reveal>
 
         <div className="relative mt-16 grid gap-6 md:grid-cols-4">

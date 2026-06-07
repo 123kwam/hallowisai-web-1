@@ -11,22 +11,24 @@ const en = {
   ],
   actions: {
     getStarted: "Get Started",
-    bookCall: "Book a discovery call",
-    exploreServices: "Explore services",
+    bookCall: "Book a Free Discovery Call",
+    exploreServices: "See What We Build",
   },
   hero: {
     eyebrow: "AI Agency · Build · Automate · Scale",
-    line1: "We Engineer",
-    accent: "Intelligent",
-    line3: "Systems.",
+    line1: "We Build AI Systems",
+    accent: "That Run",
+    line3: "While You Sleep.",
     subcopy:
-      "HallowisAI turns lead generation, software, cloud, and automation into self-running infrastructure — the kind of system your competitors cannot ignore.",
+      "Most teams lose hours every week to work a system should be doing. HallowisAI turns your lead generation, software, and operations into self-running infrastructure — so growth doesn’t depend on you being online.",
     scroll: "Scroll",
   },
   showcase: {
     eyebrow: "The work",
     headingA: "From idea to a system that",
     accent: "runs your business",
+    support:
+      "This is what a HallowisAI system looks like 90 days in — leads qualified automatically, work running on its own, and hours handed back to your team.",
     dashboard: {
       title: "HallowisAI · Control Room",
       kpis: [
@@ -41,16 +43,16 @@ const en = {
   },
   services: {
     eyebrow: "What we do",
-    headingA: "Four ways we",
-    accent: "move you forward",
+    headingA: "Everything you need to scale",
+    accent: "without hiring",
     subcopy:
-      "Every engagement is senior-led and outcome-driven. Pick one capability or combine them into an end-to-end system.",
+      "Every engagement is senior-led and built around one question: what will actually move your revenue? Pick one capability or combine them into a full system.",
     items: [
       {
         id: "lead-generation",
         title: "Lead Generation",
         description:
-          "AI-driven pipelines that find, qualify, and warm your ideal customers — so your sales team only ever talks to people ready to buy.",
+          "AI pipelines that find, qualify, and warm your ideal customers — so your sales team only ever talks to people ready to buy.",
         points: [
           "Intent-based prospecting & enrichment",
           "Automated outreach sequences",
@@ -61,7 +63,7 @@ const en = {
         id: "software-development",
         title: "Software Development",
         description:
-          "Custom web and AI applications engineered for performance, built with modern stacks and shipped fast without cutting corners.",
+          "Custom web and AI applications engineered for performance, built with modern stacks and shipped fast, without the agency runaround.",
         points: [
           "Full-stack web & mobile apps",
           "AI features & LLM integrations",
@@ -72,7 +74,7 @@ const en = {
         id: "cloud-devops",
         title: "Cloud & DevOps",
         description:
-          "Resilient, secure, and cost-efficient cloud infrastructure with automated delivery so you ship with confidence at any scale.",
+          "Resilient, secure, and cost-efficient cloud infrastructure with automated delivery — so you ship with confidence at any scale, and sleep through the 3am alerts.",
         points: [
           "CI/CD pipelines & IaC",
           "Cloud migration & optimization",
@@ -83,7 +85,7 @@ const en = {
         id: "business-automation",
         title: "Business Systems & Automation",
         description:
-          "We connect your tools and automate the busywork — turning manual operations into self-running systems that compound over time.",
+          "We connect your tools and kill the busywork — turning manual operations into systems that compound while you focus on growth.",
         points: [
           "Workflow & process automation",
           "Internal tools & dashboards",
@@ -96,6 +98,8 @@ const en = {
     eyebrow: "How we work",
     headingA: "A clear path from",
     accent: "call to scale",
+    support:
+      "Most clients see their first working system inside the first few weeks — not months.",
     steps: [
       {
         step: "01",
@@ -141,15 +145,25 @@ const en = {
       "The best businesses don’t just adopt AI — they build systems around it. We help you do exactly that, end to end.",
     name: "Kwame Sakyi",
     role: "Founder & CEO, HallowisAI",
+    location: {
+      eyebrow: "Where we work",
+      pre: "Based in",
+      city: "Amsterdam",
+      post: ", building everywhere",
+      body: "We’re an AI agency rooted in Amsterdam, serving clients across the Netherlands and beyond. Senior people, real ownership, and a bias for shipping — wherever your business is.",
+    },
   },
   ctaSection: {
     headingA: "Let’s build the system that",
     accent: "scales you",
     body: "Book a free discovery call. We’ll map your biggest opportunity and show you exactly what an AI-powered system would look like for your business.",
+    reassure:
+      "No pitch, no pressure — just a clear map of your biggest opportunity and what it’d take to build it. The call is free and takes 30 minutes.",
   },
   footer: {
     tagline:
       "Intelligent systems that scale your business — lead generation, software, cloud, and automation.",
+    location: "Amsterdam · Netherlands",
     rights: "All rights reserved.",
   },
 };
@@ -165,22 +179,24 @@ const nl: Dictionary = {
   ],
   actions: {
     getStarted: "Aan de slag",
-    bookCall: "Plan een kennismakingsgesprek",
-    exploreServices: "Bekijk diensten",
+    bookCall: "Plan een gratis kennismakingsgesprek",
+    exploreServices: "Bekijk wat we bouwen",
   },
   hero: {
     eyebrow: "AI-bureau · Bouwen · Automatiseren · Schalen",
-    line1: "Wij Bouwen",
-    accent: "Intelligente",
-    line3: "Systemen.",
+    line1: "Wij Bouwen AI-systemen",
+    accent: "Die Werken",
+    line3: "Terwijl Jij Slaapt.",
     subcopy:
-      "HallowisAI maakt van leadgeneratie, software, cloud en automatisering een zelfsturende infrastructuur — het soort systeem dat je concurrenten niet kunnen negeren.",
+      "De meeste teams verliezen elke week uren aan werk dat een systeem zou moeten doen. HallowisAI verandert je leadgeneratie, software en operatie in zelfsturende infrastructuur — zodat groei niet afhangt van of jij online bent.",
     scroll: "Scroll",
   },
   showcase: {
     eyebrow: "Het werk",
     headingA: "Van idee tot een systeem dat",
     accent: "je bedrijf runt",
+    support:
+      "Zo ziet een HallowisAI-systeem eruit na 90 dagen — leads automatisch gekwalificeerd, werk dat zichzelf draait en uren teruggegeven aan je team.",
     dashboard: {
       title: "HallowisAI · Controlekamer",
       kpis: [
@@ -195,16 +211,16 @@ const nl: Dictionary = {
   },
   services: {
     eyebrow: "Wat we doen",
-    headingA: "Vier manieren waarop we",
-    accent: "je vooruithelpen",
+    headingA: "Alles wat je nodig hebt om te groeien",
+    accent: "zonder aan te nemen",
     subcopy:
-      "Elk traject wordt geleid door seniors en is gericht op resultaat. Kies één dienst of combineer ze tot een end-to-end systeem.",
+      "Elk traject wordt geleid door seniors en draait om één vraag: wat laat je omzet écht groeien? Kies één dienst of combineer ze tot een volledig systeem.",
     items: [
       {
         id: "lead-generation",
         title: "Leadgeneratie",
         description:
-          "AI-gedreven pijplijnen die je ideale klanten vinden, kwalificeren en opwarmen — zodat je salesteam alleen spreekt met mensen die klaar zijn om te kopen.",
+          "AI-pijplijnen die je ideale klanten vinden, kwalificeren en opwarmen — zodat je salesteam alleen spreekt met mensen die klaar zijn om te kopen.",
         points: [
           "Intentiegerichte prospecting & verrijking",
           "Geautomatiseerde outreach-sequenties",
@@ -215,7 +231,7 @@ const nl: Dictionary = {
         id: "software-development",
         title: "Softwareontwikkeling",
         description:
-          "Maatwerk web- en AI-applicaties, gebouwd voor prestaties met moderne stacks en snel opgeleverd zonder concessies.",
+          "Maatwerk web- en AI-applicaties, gebouwd voor prestaties met moderne stacks en snel opgeleverd, zonder het gedoe van een bureau.",
         points: [
           "Full-stack web- & mobiele apps",
           "AI-functies & LLM-integraties",
@@ -226,7 +242,7 @@ const nl: Dictionary = {
         id: "cloud-devops",
         title: "Cloud & DevOps",
         description:
-          "Veerkrachtige, veilige en kostenefficiënte cloudinfrastructuur met geautomatiseerde delivery, zodat je met vertrouwen op elke schaal oplevert.",
+          "Veerkrachtige, veilige en kostenefficiënte cloudinfrastructuur met geautomatiseerde delivery — zodat je met vertrouwen op elke schaal oplevert en doorslaapt tijdens de meldingen om 3 uur ’s nachts.",
         points: [
           "CI/CD-pijplijnen & IaC",
           "Cloudmigratie & -optimalisatie",
@@ -237,7 +253,7 @@ const nl: Dictionary = {
         id: "business-automation",
         title: "Bedrijfssystemen & Automatisering",
         description:
-          "We koppelen je tools en automatiseren het routinewerk — zo worden handmatige processen zelfsturende systemen die in de tijd renderen.",
+          "We koppelen je tools en maken korte metten met het routinewerk — zo worden handmatige processen systemen die renderen terwijl jij je op groei richt.",
         points: [
           "Workflow- & procesautomatisering",
           "Interne tools & dashboards",
@@ -250,6 +266,8 @@ const nl: Dictionary = {
     eyebrow: "Hoe we werken",
     headingA: "Een helder pad van",
     accent: "gesprek tot groei",
+    support:
+      "De meeste klanten zien hun eerste werkende systeem binnen enkele weken — geen maanden.",
     steps: [
       {
         step: "01",
@@ -295,15 +313,25 @@ const nl: Dictionary = {
       "De beste bedrijven adopteren niet zomaar AI — ze bouwen er systemen omheen. Wij helpen je precies dat te doen, end-to-end.",
     name: "Kwame Sakyi",
     role: "Oprichter & CEO, HallowisAI",
+    location: {
+      eyebrow: "Waar we werken",
+      pre: "Gevestigd in",
+      city: "Amsterdam",
+      post: ", actief overal",
+      body: "We zijn een AI-bureau met onze basis in Amsterdam en bedienen klanten in heel Nederland en daarbuiten. Senior mensen, echt eigenaarschap en een drang om te leveren — waar je bedrijf ook zit.",
+    },
   },
   ctaSection: {
     headingA: "Laten we het systeem bouwen dat",
     accent: "jou laat groeien",
     body: "Plan een gratis kennismakingsgesprek. We brengen je grootste kans in kaart en laten precies zien hoe een AI-gedreven systeem er voor jouw bedrijf uitziet.",
+    reassure:
+      "Geen pitch, geen druk — gewoon een helder overzicht van je grootste kans en wat er nodig is om het te bouwen. Het gesprek is gratis en duurt 30 minuten.",
   },
   footer: {
     tagline:
       "Intelligente systemen die je bedrijf laten groeien — leadgeneratie, software, cloud en automatisering.",
+    location: "Amsterdam · Nederland",
     rights: "Alle rechten voorbehouden.",
   },
 };
@@ -317,22 +345,24 @@ const es: Dictionary = {
   ],
   actions: {
     getStarted: "Empezar",
-    bookCall: "Reserva una llamada",
-    exploreServices: "Ver servicios",
+    bookCall: "Reserva una llamada gratuita",
+    exploreServices: "Mira lo que construimos",
   },
   hero: {
     eyebrow: "Agencia de IA · Construir · Automatizar · Escalar",
-    line1: "Creamos",
-    accent: "Sistemas",
-    line3: "Inteligentes.",
+    line1: "Creamos Sistemas de IA",
+    accent: "Que Trabajan",
+    line3: "Mientras Duermes.",
     subcopy:
-      "HallowisAI convierte la generación de leads, el software, la nube y la automatización en infraestructura autónoma — el tipo de sistema que tus competidores no pueden ignorar.",
+      "La mayoría de los equipos pierden horas cada semana en trabajo que debería hacer un sistema. HallowisAI convierte tu generación de leads, software y operaciones en infraestructura autónoma — para que el crecimiento no dependa de que estés conectado.",
     scroll: "Scroll",
   },
   showcase: {
     eyebrow: "El trabajo",
     headingA: "De una idea a un sistema que",
     accent: "gestiona tu negocio",
+    support:
+      "Así se ve un sistema de HallowisAI a los 90 días — leads calificados automáticamente, trabajo que se ejecuta solo y horas devueltas a tu equipo.",
     dashboard: {
       title: "HallowisAI · Centro de Control",
       kpis: [
@@ -347,16 +377,16 @@ const es: Dictionary = {
   },
   services: {
     eyebrow: "Qué hacemos",
-    headingA: "Cuatro formas en que te",
-    accent: "hacemos avanzar",
+    headingA: "Todo lo que necesitas para escalar",
+    accent: "sin contratar",
     subcopy:
-      "Cada proyecto está liderado por seniors y orientado a resultados. Elige una capacidad o combínalas en un sistema integral.",
+      "Cada proyecto está liderado por seniors y gira en torno a una pregunta: ¿qué hará crecer realmente tus ingresos? Elige una capacidad o combínalas en un sistema completo.",
     items: [
       {
         id: "lead-generation",
         title: "Generación de Leads",
         description:
-          "Pipelines impulsados por IA que encuentran, califican y preparan a tus clientes ideales — para que tu equipo de ventas solo hable con personas listas para comprar.",
+          "Pipelines de IA que encuentran, califican y preparan a tus clientes ideales — para que tu equipo de ventas solo hable con personas listas para comprar.",
         points: [
           "Prospección y enriquecimiento por intención",
           "Secuencias de contacto automatizadas",
@@ -367,7 +397,7 @@ const es: Dictionary = {
         id: "software-development",
         title: "Desarrollo de Software",
         description:
-          "Aplicaciones web y de IA a medida, diseñadas para el rendimiento, construidas con stacks modernos y entregadas rápido sin atajos.",
+          "Aplicaciones web y de IA a medida, diseñadas para el rendimiento, construidas con stacks modernos y entregadas rápido, sin las vueltas de una agencia.",
         points: [
           "Apps web y móviles full-stack",
           "Funciones de IA e integraciones LLM",
@@ -378,7 +408,7 @@ const es: Dictionary = {
         id: "cloud-devops",
         title: "Cloud y DevOps",
         description:
-          "Infraestructura en la nube resiliente, segura y rentable con entrega automatizada para que despliegues con confianza a cualquier escala.",
+          "Infraestructura en la nube resiliente, segura y rentable con entrega automatizada — para que despliegues con confianza a cualquier escala y duermas durante las alertas de las 3 de la mañana.",
         points: [
           "Pipelines CI/CD e IaC",
           "Migración y optimización de la nube",
@@ -389,7 +419,7 @@ const es: Dictionary = {
         id: "business-automation",
         title: "Sistemas de Negocio y Automatización",
         description:
-          "Conectamos tus herramientas y automatizamos el trabajo repetitivo — convirtiendo operaciones manuales en sistemas autónomos que rinden con el tiempo.",
+          "Conectamos tus herramientas y eliminamos el trabajo repetitivo — convirtiendo operaciones manuales en sistemas que rinden mientras tú te enfocas en crecer.",
         points: [
           "Automatización de flujos y procesos",
           "Herramientas internas y dashboards",
@@ -402,6 +432,8 @@ const es: Dictionary = {
     eyebrow: "Cómo trabajamos",
     headingA: "Un camino claro de la",
     accent: "llamada a la escala",
+    support:
+      "La mayoría de los clientes ven su primer sistema funcionando en las primeras semanas — no meses.",
     steps: [
       {
         step: "01",
@@ -447,15 +479,25 @@ const es: Dictionary = {
       "Las mejores empresas no solo adoptan la IA — construyen sistemas a su alrededor. Te ayudamos a hacer exactamente eso, de principio a fin.",
     name: "Kwame Sakyi",
     role: "Fundador y CEO, HallowisAI",
+    location: {
+      eyebrow: "Dónde trabajamos",
+      pre: "Con base en",
+      city: "Amsterdam",
+      post: ", construyendo en todas partes",
+      body: "Somos una agencia de IA con raíces en Amsterdam, al servicio de clientes en los Países Bajos y más allá. Gente senior, propiedad real y una clara orientación a entregar — donde sea que esté tu negocio.",
+    },
   },
   ctaSection: {
     headingA: "Construyamos el sistema que",
     accent: "te hace crecer",
     body: "Reserva una llamada de descubrimiento gratuita. Trazaremos tu mayor oportunidad y te mostraremos exactamente cómo sería un sistema impulsado por IA para tu negocio.",
+    reassure:
+      "Sin pitch, sin presión — solo un mapa claro de tu mayor oportunidad y lo que costaría construirla. La llamada es gratis y dura 30 minutos.",
   },
   footer: {
     tagline:
       "Sistemas inteligentes que hacen crecer tu negocio — generación de leads, software, cloud y automatización.",
+    location: "Amsterdam · Países Bajos",
     rights: "Todos los derechos reservados.",
   },
 };
