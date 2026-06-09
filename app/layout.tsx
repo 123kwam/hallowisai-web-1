@@ -33,6 +33,8 @@ export const metadata: Metadata = {
   description: site.description,
   keywords: [
     "AI agency",
+    "AI agency Amsterdam",
+    "AI agency Netherlands",
     "lead generation",
     "software development",
     "cloud devops",
