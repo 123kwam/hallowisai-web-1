@@ -140,11 +140,18 @@ const en = {
     accent: "ship",
     p1: "HallowisAI is a focused AI agency. We don’t hand you a deck and disappear — we architect, build, and run the systems alongside you. Senior people, real ownership, measurable outcomes.",
     p2: "Led by Kwame Sakyi, the team blends engineering depth with a relentless focus on the metrics that matter to your business.",
-    connect: "Connect with our CEO",
+    connect: "Connect on LinkedIn",
     quote:
       "The best businesses don’t just adopt AI — they build systems around it. We help you do exactly that, end to end.",
     name: "Kwame Sakyi",
     role: "Founder & CEO, HallowisAI",
+    partner: {
+      eyebrow: "Our partner",
+      name: "Hasaan Waseem",
+      role: "Founder & CEO, AMZU Consulting",
+      tag: "Technology Implementation Partner",
+      cta: "View profile",
+    },
     location: {
       eyebrow: "Where we work",
       pre: "Based in",
@@ -308,11 +315,18 @@ const nl: Dictionary = {
     accent: "leveren",
     p1: "HallowisAI is een gefocust AI-bureau. We overhandigen je geen presentatie om vervolgens te verdwijnen — we ontwerpen, bouwen en draaien de systemen samen met jou. Senior mensen, echt eigenaarschap, meetbare resultaten.",
     p2: "Onder leiding van Kwame Sakyi combineert het team technische diepgang met een niet-aflatende focus op de cijfers die voor jouw bedrijf tellen.",
-    connect: "Maak kennis met onze CEO",
+    connect: "Verbind op LinkedIn",
     quote:
       "De beste bedrijven adopteren niet zomaar AI — ze bouwen er systemen omheen. Wij helpen je precies dat te doen, end-to-end.",
     name: "Kwame Sakyi",
     role: "Oprichter & CEO, HallowisAI",
+    partner: {
+      eyebrow: "Onze partner",
+      name: "Hasaan Waseem",
+      role: "Oprichter & CEO, AMZU Consulting",
+      tag: "Technologie-implementatiepartner",
+      cta: "Bekijk profiel",
+    },
     location: {
       eyebrow: "Waar we werken",
       pre: "Gevestigd in",
@@ -474,11 +488,18 @@ const es: Dictionary = {
     accent: "entrega",
     p1: "HallowisAI es una agencia de IA enfocada. No te entregamos una presentación y desaparecemos — diseñamos, construimos y operamos los sistemas junto a ti. Gente senior, propiedad real, resultados medibles.",
     p2: "Dirigido por Kwame Sakyi, el equipo combina profundidad técnica con un enfoque implacable en las métricas que importan a tu negocio.",
-    connect: "Conecta con nuestro CEO",
+    connect: "Conecta en LinkedIn",
     quote:
       "Las mejores empresas no solo adoptan la IA — construyen sistemas a su alrededor. Te ayudamos a hacer exactamente eso, de principio a fin.",
     name: "Kwame Sakyi",
     role: "Fundador y CEO, HallowisAI",
+    partner: {
+      eyebrow: "Nuestro socio",
+      name: "Hasaan Waseem",
+      role: "Fundador y CEO, AMZU Consulting",
+      tag: "Socio de Implementación Tecnológica",
+      cta: "Ver perfil",
+    },
     location: {
       eyebrow: "Dónde trabajamos",
       pre: "Con base en",

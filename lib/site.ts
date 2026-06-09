@@ -10,5 +10,6 @@ export const site = {
     calendly: "https://calendly.com/kwame-sark7-hallowisai/pre-podcast-call",
     podcast: "https://youtube.com/@tapintowisdom?si=81pXNj_wdFmQ-Wl7",
     linkedin: "https://linkedin.com/in/kwame-afirim-sakyi-11b297201",
+    partnerLinkedin: "https://www.linkedin.com/in/hasaanwaseem/",
   },
 } as const;

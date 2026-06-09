@@ -49,6 +49,41 @@ export function About() {
           </Reveal>
         </div>
 
+        {/* partner */}
+        <Reveal className="mt-16">
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 md:p-10">
+            <div className="pointer-events-none absolute -left-20 -bottom-24 h-64 w-64 rounded-full bg-brand-cyan/15 blur-3xl" />
+            <div className="relative">
+              <span className="eyebrow">{t.about.partner.eyebrow}</span>
+              <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-gradient-to-br from-brand-blue to-brand-cyan font-display text-lg font-bold text-white">
+                    HW
+                  </div>
+                  <div>
+                    <div className="font-display text-h3 font-bold text-white">
+                      {t.about.partner.name}
+                    </div>
+                    <div className="text-sm text-slate-400">{t.about.partner.role}</div>
+                    <span className="mt-2 inline-flex items-center rounded-full border border-brand-cyan/30 bg-brand-cyan/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-brand-cyan">
+                      {t.about.partner.tag}
+                    </span>
+                  </div>
+                </div>
+                <a
+                  href={site.links.partnerLinkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-ghost shrink-0"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  {t.about.partner.cta}
+                </a>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
         {/* location block — local SEO (Amsterdam / Netherlands) */}
         <Reveal className="mt-16">
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 md:p-12">

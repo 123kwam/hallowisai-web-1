@@ -22,16 +22,6 @@ export function Hero() {
       </div>
 
       <div className="container-tight">
-        {/* top eyebrow tag */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease }}
-          className="mb-8"
-        >
-          <span className="eyebrow">{t.hero.eyebrow}</span>
-        </motion.div>
-
         {/* giant headline */}
         <h1 className="section-title text-display">
           <motion.span
